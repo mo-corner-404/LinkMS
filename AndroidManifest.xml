@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="20" />
+        android:targetSdkVersion="21" />
 
     <application
         android:allowBackup="true"
@@ -18,7 +18,11 @@
             <intent-filter>
 				<data android:scheme="http"
 					android:host="static.monster-strike.com"/>
+				<data android:scheme="http"
+				    android:host="line.naver.jp"/>
                 <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
             </intent-filter>
         </activity>
     </application>
